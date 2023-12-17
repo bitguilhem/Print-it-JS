@@ -17,21 +17,22 @@ const slides = [
 	}
 ]
 
-const arrowLeft = document.querySelector('.arrow-left');
-const arrowRight = document.querySelector('.arrow-right');
+const arrowLeft = document.querySelector('.arrow_left');
+const arrowRight = document.querySelector('.arrow_right');
+// console.log(arrowRight)
 
 arrowLeft.addEventListener('click', function() {
-    console.log("Clic sur la flèche de gauche");
+    // console.log("viva la libertad carajo");
 });
 
 arrowRight.addEventListener('click', function() {
-    console.log("Clic sur la flèche de droite");
+    // console.log("viva la esclavitud");
 });
 
 function handleArrowClick(event) {
     // Vérifier quel bouton de la souris a été cliqué
     if (event.button === 0) {
-        console.log('Clic sur la flèche gauche');
+        console.log('AH !');
         // Code pour le clic sur la flèche gauche
     } else if (event.button === 2) {
         console.log('Clic sur la flèche droite');
@@ -39,8 +40,10 @@ function handleArrowClick(event) {
     }
 }
 
-// Ajout d'un event listener pour le clic sur la flèche gauche
 arrowLeft.addEventListener('mousedown', handleArrowClick);
 
 // Ajout d'un event listener pour le clic sur la flèche droite
 arrowRight.addEventListener('mousedown', handleArrowClick);
+
+const dotselected = document.querySelector('.dot_selected');
+console.log("The little hot dog")
