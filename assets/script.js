@@ -32,10 +32,10 @@ arrowRight.addEventListener('click', function() {
 function handleArrowClick(event) {
     // Vérifier quel bouton de la souris a été cliqué
     if (event.button === 0) {
-        console.log('AH !');
+        // console.log('AH !');
         // Code pour le clic sur la flèche gauche
     } else if (event.button === 2) {
-        console.log('Clic sur la flèche droite');
+        // console.log('Clic sur la flèche droite');
         // Code pour le clic sur la flèche droite
     }
 }
@@ -46,12 +46,10 @@ arrowLeft.addEventListener('mousedown', handleArrowClick);
 arrowRight.addEventListener('mousedown', handleArrowClick);
 
 const dotselected = document.querySelector('.dot_selected');
-console.log("The little hot dog")
+// console.log("The little hot dog")
 
 
-// JavaScript
-const arrowLeft = document.querySelector('.arrow_left');
-const arrowRight = document.querySelector('.arrow_right');
+
 const dots = document.querySelectorAll('.dot');
 const slideText = document.getElementById('slideText');
 const bannerImages = [
