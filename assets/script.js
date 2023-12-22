@@ -56,7 +56,7 @@ const bannerImages = [
     './assets/images/slideshow/slide1.jpg',
     './assets/images/slideshow/slide2.jpg',
     './assets/images/slideshow/slide3.jpg',
-    './assets/images/slideshow/slide4.jpg'
+    './assets/images/slideshow/slide4.png'
 ];
 let currentSlideIndex = 0;
 
@@ -67,17 +67,17 @@ function setActiveDot(index) {
 
 function changeSlide(direction) {
     if (direction === 'right') {
-        currentSlideIndex = (currentSlideIndex + 1) % bannerImages.length;
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length;
     } else if (direction === 'left') {
-        currentSlideIndex = (currentSlideIndex - 1 + bannerImages.length) % bannerImages.length;
+        currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
     }
 
     // Mettre à jour le point actif
     setActiveDot(currentSlideIndex);
 
     // Mettre à jour l'image
-    document.querySelector('.banner-img').src = bannerImages[currentSlideIndex];
-
+    document.querySelector('.banner-img').src = slides[currentSlideIndex];
+	
     // Mettre à jour le texte
     switch (currentSlideIndex) {
         case 0:
